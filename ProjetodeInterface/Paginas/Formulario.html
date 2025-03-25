@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="StyleSheet" type="text/css" href="../style.css"/>
 </head>
 <body>
     <!--Formulário-->
-    <h2 align="center">Formulário</h2>
+    <h2>Formulário</h2>
     <form action="" method="post">
        <p>Nome: <input type="text" name="Nome" placeholder="Escreva seu nome" size="60"/></p> 
        <p>Telefone:<input type="tel" placeholder="(00) 00000-0000" maxlength="11"/>Me ligue</p> 
@@ -40,7 +41,26 @@
             <option value="Paraíba">Paraíba</option>
         </select>
        </p>
-       
+       <!--Estrutura de Checkbox-->
+       <p>
+        <input type="checkbox" name="termos"/>
+        Você aceita fazer parte da Ceita do HTML!!!
+       </p>
+       <input type="reset" name="reset"/>
+       <input type="submit" name="submit"/>
     </form>
+    <br />
+    <br />
+    <!--Fieldset-->
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>Nome: <input type="text"/></label>
+            <br />
+            <br />
+            <label>CPF: <input type="text"/></label>
+        </fieldset>
+    </form>
+    
 </body>
 </html>
